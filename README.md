@@ -2,7 +2,7 @@
 
 ## Zum Instagram Post vom 15.5.2020.
 
-> ![74LS04](blob/master/electronics/75ls04/74LS04.jpg)
+> ![74LS04](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04.jpg)
 >
 > Was passiert, wenn die Spannungsversorgung hergestellt wird?
 >
@@ -24,17 +24,17 @@ Der Titel des Datenblatts sagt "Hex Inverters". "Inverter" meint die NOT Funktio
 
 Wer das nicht schon wusste, findet spätestens auf Seite 2 die zugehörige Logiktabelle:
 
-![Logiktabelle 74LS04](electronics/75ls04/74LS04-function-table.png)
+![Logiktabelle 74LS04](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-function-table.png)
 
 Die Datenblätter gelten oft nicht nur für einen einzelnen Chip, sondern für alle Ausführungen davon, beispielsweise unterschiedliche Gehäuseformen (THT und SMD). Im vorliegenden Fall gibt es drei Ausführungen:
 
-![74LS04 Housings](electronics/75ls04/74LS04-housings.png)
+![74LS04 Housings](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-housings.png)
 
 Die letzte Bauform passt allein aufgrund der Form nicht zum Bild. Die mittlere Variante gilt nur für die 54er-Version, nicht aber für die 74er-Version. In diesem Fall ist also schon recht schnell geklärt, welche Pinbelegung der Chip haben muss.
 
 Du kannst nun gedanklich den Chip aus dem Datenblatt auf die Schaltung legen. Achte dabei auf die Einkerbung (das Halbrund), also etwa so:
 
-![Überlagerung mit Datenblatt](electronics/75ls04/74LS04-explained.jpg)
+![Überlagerung mit Datenblatt](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-explained.jpg)
 
 Nun kannst Du schon sehen, wie die Verbindungen hergestellt sind:
 
@@ -48,11 +48,11 @@ Nun kannst Du schon sehen, wie die Verbindungen hergestellt sind:
 
 Das Logikdiagramm auf Seite 3 sagt Dir, wie die NOT-Gatter miteinander verschaltet sind:
 
-![LogikDiagramm](electronics/75ls04/74LS04-logicdiagram.png)
+![LogikDiagramm](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-logicdiagram.png)
 
 Im vorliegenden Fall kommt also ein HIGH Signal (Plus, grüner Draht) zum Eingang 6A. 
 Dieses bewirkt ein LOW Signal am Ausgang 6Y. Von dort wird es weitergeführt (blauer Draht) zum Eingang 4A.
 Das LOW Signal von 4A bewirkt ein HIGH Signal am Ausgang 4Y. Von dort wird es über den Widerstand zur LED geleitet.
-Sofern die LED richtig herum eingebaut ist (auf dem Bild schlecht erkennbar), und der Ausgang leistungsstark genug ist, um genügend Strom für die LED bereitszustellen, wird die LED leuchten.
+Sofern die LED richtig herum eingebaut ist (auf dem Bild schlecht erkennbar), und der Ausgang leistungsstark genug ist, um genügend Strom für die LED bereitzustellen, wird die LED leuchten.
 
-![Ergebnis](electronics/75ls04/74LS04-solution.jpg)
+![Ergebnis](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-solution.jpg)
