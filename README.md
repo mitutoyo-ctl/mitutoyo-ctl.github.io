@@ -1,4 +1,4 @@
-# Elektrotechnik
+# Ausbildungsinhalte von Mitutoyo CTL Germany GmbH
 
 ## Zum Instagram Post vom 15.5.2020.
 
@@ -8,11 +8,11 @@
 >
 > Skill required: Datenblatt lesen
 
-Es handelt sich bei der Abbildung um den Aufbau einer Digitalschaltung auf einem Steckbreatt, auch als Breadboard bekannt.
+Es handelt sich bei der Abbildung um den Aufbau einer Digitalschaltung auf einem Steckbrett, auch als Breadboard bekannt.
 
 Der verwendete Chip ist als 74LS04 gekennzeichnet. Um herauszufinden, welche Funktionalität dieser Chip bietet, ist entweder ein gutes Erinnerungsvermögen und Erfahrung nötig, oder man zieht ein Datenblatt zu Rate.
 
-Datenblätter gibt es hoffentlich vom Lieferant (wir bestellen z.B. Reichelt oder Conrad), von anderen Lieferanten (z.B. Mouseer) oder direkt vom Hersteller (z.B. von Texas Instruments).
+Datenblätter gibt es hoffentlich vom Lieferant (wir bestellen z.B. Reichelt oder Conrad), von anderen Lieferanten (z.B. Mouser) oder idealerweise direkt vom Hersteller (z.B. von Texas Instruments). Im Studium ist die Primärquelle vorzuziehen.
 
 In diesem Fall stehen zum Beispiel folgende Quellen zur Verfügung:
 
@@ -46,7 +46,7 @@ Nun kannst Du schon sehen, wie die Verbindungen hergestellt sind:
 * eine LED von Zeile 19 des Breadboards zu Zeile 20 des Breadboards
 * ein schwarzer Draht von Zeile 20 des Breadboards zu Minus
 
-Das Logikdiagramm auf Seite 3 sagt Dir, wie die NOT-Gatter miteinander verschaltet sind:
+Das Logikdiagramm auf Seite 3 sagt Dir, wie die NOT-Gatter verschaltet sind, d.h. welche Pins Eingänge und Ausgänge sind:
 
 ![LogikDiagramm](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-logicdiagram.png)
 
