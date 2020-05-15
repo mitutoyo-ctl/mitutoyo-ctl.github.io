@@ -1,8 +1,8 @@
 # Elektrotechnik
 
-Zum Instagram Post vom 15.5.2020.
+## Zum Instagram Post vom 15.5.2020.
 
-> ![74LS04](electronics/75ls04/74LS04.jpg)
+> ![74LS04](blob/master/electronics/75ls04/74LS04.jpg)
 >
 > Was passiert, wenn die Spannungsversorgung hergestellt wird?
 >
