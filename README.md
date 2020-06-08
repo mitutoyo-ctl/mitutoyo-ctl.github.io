@@ -8,6 +8,10 @@
 > 
 > Mehr über Digitaltechnik lernst Du im Studium der Informationstechnik bei uns.
 
+
+
+> ![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-detail.jpg)
+
 Wie im vorherigen Post ist die Schaltung auf dem Steckbrett aufgebaut. Der Chip ist als 74LS32 beschriftet, oder im Detail-Bild als SN74LS32N zu identifizieren. Es handelt sich also wieder um einen Digitalbaustein er 74er-Reihe.
 
 Der Vorsatz SN war eine Abkürzung für "Semiconductor Network" und bedeutete, dass hier mehrere Transistoren zusammengeschaltet waren. Außer Texas Instruments nutzte diese Bezeichnung aber niemand und so wird SN seither mit Texas Instruments in Verbindung gebracht. Neben SN nutzt Texas Instruments auch den Vorsatz TI. 
