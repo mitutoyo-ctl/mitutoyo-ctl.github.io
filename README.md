@@ -12,11 +12,11 @@
 
 > ![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-detail.jpg)
 
-Wie im vorherigen Post ist die Schaltung auf dem Steckbrett aufgebaut. Der Chip ist als 74LS32 beschriftet, oder im Detail-Bild als SN74LS32N zu identifizieren. Es handelt sich also wieder um einen Digitalbaustein er 74er-Reihe.
+Wie im vorherigen Post ist die Schaltung auf dem Steckbrett aufgebaut. Der Chip ist als 74LS32 beschriftet, oder im Detail-Bild als SN74LS32N zu identifizieren. Es handelt sich also wieder um einen Digitalbaustein der 74er-Reihe.
 
 Der Vorsatz SN war eine Abkürzung für "Semiconductor Network" und bedeutete, dass hier mehrere Transistoren zusammengeschaltet waren. Außer Texas Instruments nutzte diese Bezeichnung aber niemand und so wird SN seither mit Texas Instruments in Verbindung gebracht. Neben SN nutzt Texas Instruments auch den Vorsatz TI. 
 
-Das TI Logo ist bei diesem Exemplar nicht besonders gut erkennbar. Wer jedoch öfter mit ICs bastelt, wird mit der Zeit auch Logos in schlechterer Qualität erkennen.
+Das TI Logo ist bei diesem Exemplar nicht besonders gut erkennbar. Wenn Du jedoch öfter mit ICs bastelst, wirst Du mit der Zeit auch Logos in schlechterer Qualität erkennen.
 
 ![Logo von Texas Instruments](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/ti-logo.png)
 
@@ -33,11 +33,11 @@ Häufiger als DIL wirst Du vermutlich den Begriff DIP für "DIL package" finden.
 
 Diese Bauformen sind für die Durchsteckmontage hergestellt. Der englische Begriff THT (through hole technology) macht es deutlich: diese Chips werden in der Anwendung durch Löcher (Bohrungen) gesteckt und dann verlötet.
 
-Mit Hilfe des [TI Datenblatts für den 74LS32](http://www.ti.com/lit/ds/symlink/sn74ls32.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&ts=1591626690153) lässt sich wieder die Funktion des Chips ermitteln, die Belegung der Pins herausfinden und anhand der Drähte die Schaltung analysieren.
+Mit Hilfe des [TI Datenblatts für den 74LS32](http://www.ti.com/lit/ds/symlink/sn74ls32.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&ts=1591626690153) ermittelst Du wieder die Funktion des Chips, kannst die Belegung der Pins herausfinden und anhand der Drähte die Schaltung analysieren.
 
 Es handelt sich um ein Quadruple 2-Input Positive-Or Gate. "Or Gate" beschreibt die Funktion: es handelt sich um die Oder-Verknüpfung. "Positive" sagt, dass der Chip seine Funktion bei einer "hohen" Spannung ausführt, also bei einer digitalen Eins. "2-Input" sagt, dass die Oder-Funktion zwei Eingänge besitzt. Und "Quadruple" sagt, dass die Funktion viermal verfügbar ist. 
 
-In einer Funktionstabelle für zwei digitale Eingänge würde man vielleicht 2²=4 Zeilen erwarten. TI kürzt da jedoch mit einem X für beliebige Werte:
+In einer Funktionstabelle für zwei digitale Eingänge würdest Du vielleicht 2²=4 Zeilen erwarten. TI kürzt da jedoch mit einem X für beliebige Werte:
 
 ![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-function-table.png)
 
