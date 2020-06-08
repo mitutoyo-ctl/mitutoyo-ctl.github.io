@@ -1,8 +1,8 @@
 # Ausbildungsinhalte von Mitutoyo CTL Germany GmbH
 
-# Zum Instagram Post vom 8.6.2020
+## Zum Instagram Post vom 8.6.2020
 
-> ![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32.jpg)
+> ![74LS32](electronics/74ls32/74ls32.jpg)
 > 
 > Wird die LED in dieser Schaltung leuchten?
 > 
@@ -10,7 +10,7 @@
 
 
 
-> ![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-detail.jpg)
+> ![74LS32](electronics/74ls32/74ls32-detail.jpg)
 
 Wie im vorherigen Post ist die Schaltung auf dem Steckbrett aufgebaut. Der Chip ist als 74LS32 beschriftet, oder im Detail-Bild als SN74LS32N zu identifizieren. Es handelt sich also wieder um einen Digitalbaustein der 74er-Reihe.
 
@@ -18,7 +18,7 @@ Der Vorsatz SN war eine Abkürzung für "Semiconductor Network" und bedeutete, d
 
 Das TI Logo ist bei diesem Exemplar nicht besonders gut erkennbar. Wenn Du jedoch öfter mit ICs bastelst, wirst Du mit der Zeit auch Logos in schlechterer Qualität erkennen.
 
-![Logo von Texas Instruments](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/ti-logo.png)
+![Logo von Texas Instruments](electronics/74ls32/ti-logo.png)
 
 Andere Kürzel sind:
 * AD: Analog Devices
@@ -39,25 +39,25 @@ Es handelt sich um ein Quadruple 2-Input Positive-Or Gate. "Or Gate" beschreibt 
 
 In einer Funktionstabelle für zwei digitale Eingänge würdest Du vielleicht 2²=4 Zeilen erwarten. TI kürzt da jedoch mit einem X für beliebige Werte:
 
-![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-function-table.png)
+![74LS32](electronics/74ls32/74ls32-function-table.png)
 
 Das Logik-Diagramm:
 
-![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-logic-diagram.png)
+![74LS32](electronics/74ls32/74ls32-logic-diagram.png)
 
 Die Pin-Belegung:
 
-![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-pins.png)
+![74LS32](electronics/74ls32/74ls32-pins.png)
 
 Damit ergibt sich folgende Schaltung:
 
-![74LS32](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls32/74ls32-schematics.png)
+![74LS32](electronics/74ls32/74ls32-schematics.png)
 
 Die Aussage HIGH OR LOW ergibt HIGH, womit die LED leuchten sollte, falls alle anderen Voraussetzungen gegeben sind.
 
 ## Zum Instagram Post vom 15.5.2020
 
-> ![74LS04](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04.jpg)
+> ![74LS04](electronics/74ls04/74LS04.jpg)
 >
 > Was passiert, wenn die Spannungsversorgung hergestellt wird?
 >
@@ -79,17 +79,17 @@ Der Titel des Datenblatts sagt "Hex Inverters". "Inverter" meint die NOT Funktio
 
 Wer das nicht schon wusste, findet spätestens auf Seite 2 die zugehörige Logiktabelle:
 
-![Logiktabelle 74LS04](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-function-table.png)
+![Logiktabelle 74LS04](electronics/74ls04/74LS04-function-table.png)
 
 Die Datenblätter gelten oft nicht nur für einen einzelnen Chip, sondern für alle Ausführungen davon, beispielsweise unterschiedliche Gehäuseformen (THT und SMD). Im vorliegenden Fall gibt es drei Ausführungen:
 
-![74LS04 Housings](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-housings.png)
+![74LS04 Housings](electronics/74ls04/74LS04-housings.png)
 
 Die letzte Bauform passt allein aufgrund der Form nicht zum Bild. Die mittlere Variante gilt nur für die 54er-Version, nicht aber für die 74er-Version. In diesem Fall ist also schon recht schnell geklärt, welche Pinbelegung der Chip haben muss.
 
 Du kannst nun gedanklich den Chip aus dem Datenblatt auf die Schaltung legen. Achte dabei auf die Einkerbung (das Halbrund), also etwa so:
 
-![Überlagerung mit Datenblatt](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-explained.jpg)
+![Überlagerung mit Datenblatt](electronics/74ls04/74LS04-explained.jpg)
 
 Nun kannst Du schon sehen, wie die Verbindungen hergestellt sind:
 
@@ -103,11 +103,11 @@ Nun kannst Du schon sehen, wie die Verbindungen hergestellt sind:
 
 Das Logikdiagramm auf Seite 3 sagt Dir, wie die NOT-Gatter verschaltet sind, d.h. welche Pins Eingänge und Ausgänge sind:
 
-![LogikDiagramm](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-logicdiagram.png)
+![LogikDiagramm](electronics/74ls04/74LS04-logicdiagram.png)
 
 Im vorliegenden Fall kommt also ein HIGH Signal (Plus, grüner Draht) zum Eingang 6A. 
 Dieses bewirkt ein LOW Signal am Ausgang 6Y. Von dort wird es weitergeführt (blauer Draht) zum Eingang 4A.
 Das LOW Signal von 4A bewirkt ein HIGH Signal am Ausgang 4Y. Von dort wird es über den Widerstand zur LED geleitet.
 Sofern die LED richtig herum eingebaut ist (auf dem Bild schlecht erkennbar), und der Ausgang leistungsstark genug ist, um genügend Strom für die LED bereitzustellen, wird die LED leuchten.
 
-![Ergebnis](https://raw.githubusercontent.com/mitutoyo-ctl/mitutoyo-ctl.github.io/master/electronics/74ls04/74LS04-solution.jpg)
+![Ergebnis](electronics/74ls04/74LS04-solution.jpg)
