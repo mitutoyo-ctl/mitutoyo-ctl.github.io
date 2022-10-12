@@ -1,5 +1,64 @@
 # Ausbildungsinhalte von Mitutoyo CTL Germany GmbH
 
+## Zum Instagram Post vom 12.10.2022
+
+![Kleine Widerstände](electronics/resistors/small.jpg)
+
+![Kleine Widerstände](electronics/resistors/large.jpg)
+
+Text aus dem Instagram Post:
+
+> Wenn Du in der Schule etwas über Widerstände gelernt hast, dann vermutlich den Zusammenhang zwischen Widerstand, Strom und Spannung (U=R\*I) und dass der Widerstandswert vom Material, der Länge und dem Querschnitt abhängt (R=ρ\*l/A).
+>
+> In der Schule arbeitest Du mit einer Idealvorstellung von elektronischen Bauteilen. Im Studium der Informationstechnik stellst Du Dich der Realität und lernst, dass es bei realen Bauteilen wie einem echten Widerstand ganz schön viele Dinge zu berücksichtigen gibt.
+>
+> Beispielsweise musst Du beachten, welche Leistung ein Widerstand aushält, bevor er in Flammen aufgeht. Oder Du stellst fest, dass Dein selbstgebautes Handy 23 kg wiegt, weil Du nicht auf das Gewicht und die Größe der Widerstände geachtet hast.
+>
+> Der größte Widerstand im Bild hält übrigens 1000 Watt aus und wird bei Tests von Funkgeräten eingesetzt.
+
+Widerstände kannst Du für folgende Zwecke einsetzen:
+
+* zur Begrenzung des Stroms, z.B. als Vorwiderstand von LEDs
+* zur Aufteilung einer großen Spannung in mehrere kleine Spannungen (Reihenschaltung)
+* zur Aufteilung eines großen Stroms in mehrere kleine Ströme (Parallelschaltung)
+* einen Widerstand allein zur Erzeugung von Wärme
+
+Bei der Auswahl eines Widerstands hast Du bisher vielleicht gedacht, dass Du den Widerstandswert ausrechnest und dann einen Widerstand mit diesem Wert kaufst. Doch so einfach ist das mit echten Widerständen gar nicht...
+
+Folgende Auswahlkriterien können bei Widerständen eine Rolle spielen:
+
+* **Widerstandswert**: sicherlich einer der wichtigsten Faktoren, besonders für Dich als Student. Du berechnest einen Widerstand und möchtest genau den auch haben. Eventuell stellst Du aber fest, dass es den gar nicht zu kaufen gibt. Da gehen wir nachher nochmal drauf ein.
+* **Belastbarkeit**: an einem Widerstand liegt eine Spannung an und es fließt ein bestimmter Strom. Strom und Spannung multipliziert ergeben die Leistung, die an diesem Widerstand in Wärme umgewandelt wird. Ist diese Leistung zu hoch, kann der Widerstand zerstört werden und evtl. sogar ein Feuer verursachen. Neben dem Widerstandswert ist das oft die zweitwichtigste Eigenschaft.
+* **Montageart**: es gibt Widerstände in Oberflächenmontage (SMD) oder Through-Hole-Technologie (THT) mit Drähten, die man durch Löcher in der Platine stecken kann. Je nach dem, was für eine Platine Du fertigen möchtest, muss Dein Widerstand dazu passen.
+* **Toleranz**: Widerstände werden mit einer bestimmten Genauigkeit gefertigt. Wenn Du ein präzises Messgerät aufbaust, verwendest Du Widerstände mit einer geringen Toleranz. Bei einer einfachen Arduino-Schaltung reichen Dir 10% Genauigkeit aus.
+* **Baugröße**: Widerstände gibt es in unterschiedlichen Größen (siehe Foto). In ein Smartphone möchtest Du sicherlich eher kleine Widerstände einbauen. Leider hat die Baugröße oft Auswirkungen auf die Belastbarkeit.
+* **Preis**: je nach dem, wie viel Budget Du hast und wie viele Widerstände Du brauchst, spielt der Preis eine Rolle. Vielleicht kannst Du durch die Verwendung von mehreren billigen 1/4 Watt Widerständen und Reihenschaltung oder Parallelschaltung auf einen ansonsten teuren 2 Watt Widerstand verzichten.
+* **Spannungsfestigkeit**: insbesondere wenn Du mit hohen Spannungen wie z.B. 230V~ arbeitest, möchtest Du, dass Dein Widerstand das auch aushält. Das ist nicht unbedingt gleichzusetzen mit der Belastbarkeit. Beispielsweise kann ein 1 MOhm Widerstand an 230V~ nur eine geringe Belastbarkeit aufweisen (ca. 50mW), muss aber die Spitzenspannung aushalten.
+* **Frequenzverhalten**: jeder echte Widerstand ist zu einem kleinen Teil auch ein Kondensator und eine Spule. Wenn Dein Widerstand an einer hochfrequenten Wechselspannung angeschlossen ist, möchtest Du diese Eigenschaften vielleicht so gering wie möglich halten.
+* **Temperaturverhalten**: Du hast sicherlich gelernt, dass sich Atome bei hoher Temperatur stärker bewegen und dadurch die Elektronen eher behindern. Wenn Du sicherstellen möchtest, dass sich Deine Schaltung auch bei hohen Temperaturen im Sommer noch korrekt verhält, dann wählst Du Widerstände mit einem geringen Temperaturkoeffizienten.
+* **Material**: es gibt Kohleschicht-, Metallschicht- oder Metalloxidwiderstände und vermutlich noch weitere Materialien. Diese Materialien haben noch andere Eigenschaften, z.B. könnten sie magnetisch sein - was zu Deiner Schaltung passt, oder auch nicht.
+* **Lagerbestand**: mit einer Parallelschaltung von zwei gleichen Widerständen kannst Du den Widerstandswert halbieren. Wenn Du z.B. noch 1000 Widerstände mit 100 Ohm zur Verfügung hast, und einen 50 Ohm Widerstand brauchst, brauchst Du nicht noch 1000 Widerstände mit 50 Ohm kaufen, sondern kannst deinen Lagerbestand klein halten und aufbrauchen. Im Gegenzug brauchst Du dafür mehr Platz und musst mehr löten.
+* **Verfügbarkeit**: in letzter Zeit waren einige elektronische Komponenten ausverkauft oder hatten lange Lieferzeiten von bis zu 1 Jahr. Da lohnt es sich, nochmal nachzuschauen, ob es nicht Alternativen gibt, die kurzfristiger verfügbar sind.
+
+Wenn Du Widerstände kaufst, wirst Du feststellen, dass Du nicht alle Werte kaufen kannst. Außerdem scheinen die Widerstandswerte ziemlich exotisch zu sein. Typische Widerstandswerte sind 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68 und 82 Ohm, sowie zehnfache davon. Wie kommt es zu genau diesen Werten? Warum kauft man nicht "gerade" Werte wie 10, 20, 30, 40, ... ?
+
+Die Antwort dafür liegt in der Toleranz. Bei den o.g. Widerstandswerten handelt es sich um Werte mit 10% Toleranz. Wenn Du mal ausrechnest, wie groß der Streubereich bei 10% ist, wirst Du feststellen, dass die Obergrenze von einem Wert mit der Untergrenze vom nächsten Wert übereinstimmt. Ein Beispiel: Ein Widerstand mit einem Nominalwert von 68 Ohm kann bei 10% Toleranz zwischen 61,2 Ohm und 74,8 Ohm liegen. Der nächsthöhere Wert, nominell 82 Ohm, liegt zwischen 73,8 Ohm und 90,2 Ohm.
+
+Hinter den "schrägen" Widerstandswerten liegt also ein ganz praktischer Grund. Außerdem unterscheiden sich dadurch die Farben der Widerstandskennzeichnung (Ringe) besser, was das Ablesen vereinfacht.
+
+Diese "schrägen" Widerstandswerte sortieren wir in sogenannte E-Reihen ein. Bei 10% erhalten wir 12 unterschiedliche Werte (siehe oben), so dass sich die E12-Reihe ergibt. Bei 5% ergeben sich 24 Werte, also die E24-Reihe. Und bei 1% haben wir die E96 Reihe.
+
+Weißt Du jetzt alles über Widerstände? Sicherlich nicht. Beim Lesen hast Du theoretisches Wissen erworben. Im Studium der Informationstechnik kommt noch das praktische Können dazu. Du musst Widerstände mal in die Hand genommen haben, um zu spüren, wie viel die wiegen. Du musst mal gefühlt haben, wie sich Widerstände erwärmen. Und es schadet auch nicht, den Geruch zu kennen, wenn ein Widerstand durchbrennt. 
+
+Solche Experimente kannst Du unter Aufsicht eines erfahrenen Ausbilders durchführen. Während das Experiment für Dich vielleicht trivial erscheint, hat er schon an Dinge gedacht, die Dir nicht aufgefallen sind:
+
+* er gibt Dir ein Labornetzteil, das kurzschlusssicher ist, so dass das Netzteil keinen Schaden nimmt
+* er achtet darauf, dass Du eine nicht-brennbare Unterlage verwendest
+* er stellt sicher, dass Du den Finger auf die Widerstände legst, solange sie noch kalt sind, damit Du Dir die Finger nicht verbrennst
+* er gibt Dir eine Steckdose mit FI-Schutzschalter, so dass im Ernstfall niemand einen lebensbedrohlichen Stromschlag bekommen kann
+* er hat die Kollegen informiert, dass sie bei "elektrischem Geruch" nicht in Panik ausbrechen
+* er hat den Brandschutzbeauftragten über das Experiment informiert
+
 ## Zum Instagram Post vom 8.6.2020
 
 > ![74LS32](electronics/74ls32/74ls32.jpg)
